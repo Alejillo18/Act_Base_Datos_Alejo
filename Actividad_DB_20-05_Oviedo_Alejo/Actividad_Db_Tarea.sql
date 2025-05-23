@@ -77,3 +77,7 @@ SELECT* FROM Articulos WHERE Nombre IN ('Carlos','Maria','Valentina');
 
 SELECT * FROM Articulos WHERE Nombre LIKE ('CARLOS')
 
+--BETWEEN
+
+SELECT * FROM Articulos WHERE Seccion BETWEEN 2 and 3;
+
