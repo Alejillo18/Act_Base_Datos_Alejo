@@ -43,6 +43,40 @@ VALUES
 (9, 3, 'El Aleph'),
 (10, 3, 'El libro de arena');
 
+--Select a ambas tablas:
 
 Select * From Autores;
 Select * From Libros;
+
+--Modificacion de datos
+
+UPDATE Libros 
+SET LibroID=11 
+WHERE Titulo = 'El libro de arena';
+
+--verificamos modificacion:
+Select * From Libros;
+
+
+--Borrar un dato
+
+DELETE FROM Libros
+WHERE LibroID=11;
+
+--verificamos Eliminacion:
+Select * From Libros;
+
+--Borrar una columna
+ALTER TABLE Libros
+DROP COLUMN Titulo;
+
+--verificamos Eliminacion:
+Select * From Libros;
+
+SELECT TOP 3 * FROM Libros
+ORDER BY Titulo ASC ;
+
+
+
+SELECT * FROM Libros
+WHERE Titulo like '%Y%';
