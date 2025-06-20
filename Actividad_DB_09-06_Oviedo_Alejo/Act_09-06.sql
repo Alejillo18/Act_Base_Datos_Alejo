@@ -73,3 +73,13 @@ INSERT INTO Productos (Nombre, Precio, CategoriaID, ProveedorID) VALUES
 SELECT * FROM Productos
 SELECT * FROM Categorias
 SELECT * FROM Proveedores
+
+
+GO
+CREATE VIEW VistaProd AS
+SELECT ProductoID,Nombre,Precio
+FROM  Productos
+GO
+
+SELECT * FROM VistaProd
+DROP  VIEW VistaProd
